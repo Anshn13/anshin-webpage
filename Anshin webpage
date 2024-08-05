@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anshin's Webpage</title>
+    <style>
+        body {
+            background-color: #282a36;
+            color: #f8f8f2;
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #44475a;
+            color: #ffb86c;
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+            font-family: 'Harry Potter', cursive;
+        }
+        section {
+            padding: 20px;
+        }
+        h2 {
+            color: #ff79c6;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .card {
+            background-color: #6272a4;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            width: 45%;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form label, .contact-form input, .contact-form textarea {
+            margin-bottom: 10px;
+        }
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        .contact-form input[type="submit"] {
+            background-color: #ff5555;
+            color: #f8f8f2;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #44475a;
+            color: #f8f8f2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Anshin's Magical World
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="card">
+                <h2>About Me</h2>
+                <p>Hello! I'm Anshin, a graphic designer and content writer. With a passion for creativity and storytelling, I bring a unique touch to every project I undertake. My work is inspired by the magical world of Harry Potter, blending fantasy with reality to create enchanting designs and compelling content.</p>
+            </div>
+            <div class="card">
+                <h2>Contact</h2>
+                <form class="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="card">
+                <h2>Blog</h2>
+                <p>Welcome to my blog! Here, I share my thoughts, experiences, and the latest trends in graphic design and content writing. Stay tuned for magical insights and tips to enhance your creativity!</p>
+                <p><em>Coming soon...</em></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 Anshin. All rights reserved.
+    </footer>
+</body>
+</html>
